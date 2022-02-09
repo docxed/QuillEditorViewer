@@ -20,9 +20,9 @@ export default {
           return new Promise((resolve) => {
             setTimeout(() => {
               resolve(
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/480px-JavaScript-logo.png"
+                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg"
               );
-            }, 3500);
+            }, 1000);
           });
         },
       },

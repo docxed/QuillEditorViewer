@@ -1,7 +1,6 @@
 {
   "name": "quill-editor-viewer",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -43,5 +42,23 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "Quill Editor and Viewer for Vue.js and Nuxt.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NAPATKRUP/QuillEditorViewer.git"
+  },
+  "keywords": [
+    "Quill",
+    "Viewer",
+    "Editor",
+    "Vue.js",
+    "Nuxt.js"
+  ],
+  "author": "Napat_Ar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NAPATKRUP/QuillEditorViewer/issues"
+  },
+  "homepage": "https://github.com/NAPATKRUP/QuillEditorViewer#readme"
 }
