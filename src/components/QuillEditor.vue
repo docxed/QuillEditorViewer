@@ -36,6 +36,10 @@ export default {
       type: Object,
       required: true,
     }, // Ref : https://github.com/NoelOConnell/quill-image-uploader
+    toolbarItems: {
+      type: Array,
+      default: () => TOOLBAROPTIONS
+    }
   },
   computed: {
     options() {
@@ -45,8 +49,8 @@ export default {
         preserveWhitespace: false,
         modules: {
           toolbar: !this.isMobile
-            ? TOOLBAROPTIONS
-            : TOOLBAROPTIONS.flat(),
+            ? this.toolbarItems
+            : this.toolbarItems.flat(),
           magicUrl: {
             globalRegularExpression: /(https?:\/\/|www\.|tel:)[\S]+/g,
             mailRegularExpression: /([\w-.]+@[\w-.]+\.[\w-.]+)/gi,
