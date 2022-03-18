@@ -30,7 +30,7 @@ export default {
     },
     isMobile: {
       type: Boolean,
-      default: false
+      default: false,
     },
     imageUploader: {
       type: Object,
@@ -38,14 +38,18 @@ export default {
     }, // Ref : https://github.com/NoelOConnell/quill-image-uploader
     toolbarItems: {
       type: Array,
-      default: () => TOOLBAROPTIONS
-    }
+      default: () => TOOLBAROPTIONS,
+    },
+    placeholder: {
+      type: String,
+      default: "Detail",
+    },
   },
   computed: {
     options() {
       return {
         theme: "snow",
-        placeholder: "Detail",
+        placeholder: this.placeholder,
         preserveWhitespace: false,
         modules: {
           toolbar: !this.isMobile
@@ -61,9 +65,9 @@ export default {
               normalizeProtocol: false,
             },
           },
-          imageUploader: this.imageUploader
+          imageUploader: this.imageUploader,
         },
-      }
+      };
     },
   },
 };
