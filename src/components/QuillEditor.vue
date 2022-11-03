@@ -44,6 +44,10 @@ export default {
       type: String,
       default: "Detail",
     },
+    blotFormatter: {
+      type: Object,
+      required: true,
+    },
   },
   computed: {
     options() {
@@ -66,6 +70,7 @@ export default {
             },
           },
           imageUploader: this.imageUploader,
+          blotFormatter: this.blotFormatter,
         },
       };
     },

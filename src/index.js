@@ -31,15 +31,18 @@ import "quill/dist/quill.bubble.css";
 
 import MagicUrl from "quill-magic-url";
 import ImageUploader from "quill-image-uploader";
+import BlotFormatter from 'quill-blot-formatter';
 
 import QuillEditor from "./components/QuillEditor";
 import QuillViewer from "./components/QuillViewer";
+
 
 const install = (Vue) => {
   console.log("Installing...");
   // Set Up
   Quill.register("modules/magicUrl", MagicUrl);
   Quill.register("modules/imageUploader", ImageUploader);
+  Quill.register('modules/blotFormatter', BlotFormatter);
   Vue.use(VueQuillEditor);
 
   // Custom
